@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js" defer></script>
 </head>
 <body>
     <nav id="sidebar">
@@ -28,29 +29,33 @@
                 </a>
             </li>
             <li>
-                <button class="dropdown-btn">
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M576-324h72v-72h72v-72h-72v-72h-72v72h-72v72h72v72ZM168-192q-29 0-50.5-21.5T96-264v-432q0-29.7 21.5-50.85Q139-768 168-768h216l96 96h312q29.7 0 50.85 21.15Q864-629.7 864-600v336q0 29-21.15 50.5T792-192H168Zm0-72h624v-336H450l-96-96H168v432Zm0 0v-432 432Z"/></svg>
                     <span>Create</span>
                     <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M480-333 240-573l51-51 189 189 189-189 51 51-240 240Z"/></svg>
                 </button>
                 <ul class="sub-menu">
-                    <li><a href="#">Folder</a></li>
-                    <li><a href="#">Document</a></li>
-                    <li><a href="#">Project</a></li>
+                    <div>
+                        <li><a href="#">Folder</a></li>
+                        <li><a href="#">Document</a></li>
+                        <li><a href="#">Project</a></li>
+                    </div>
                 </ul>
             </li>
             <li>
-                <button class="dropdown-btn">
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M232-216 96-352l51-51 84 85 170-170 52 51-221 221Zm0-312L96-664l51-51 85 85 169-170 52 51-221 221Zm296 240v-72h336v72H528Zm0-312v-72h336v72H528Z"/></svg>
                     <span>Todo-list</span>
                     <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M480-333 240-573l51-51 189 189 189-189 51 51-240 240Z"/></svg>
                 </button>
                 <ul class="sub-menu">
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Private</a></li>
-                    <li><a href="#">Codig</a></li>
-                    <li><a href="#">Gardening</a></li>
-                    <li><a href="#">School</a></li>
+                    <div>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Private</a></li>
+                        <li><a href="#">Codig</a></li>
+                        <li><a href="#">Gardening</a></li>
+                        <li><a href="#">School</a></li>
+                    </div>
                 </ul>
             </li>
             <li>
